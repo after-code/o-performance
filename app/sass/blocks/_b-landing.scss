@@ -1,0 +1,139 @@
+.b-landing {
+  width: 100%;
+  display: block;
+
+}
+.b-landing__top {
+  display: block;
+  text-align: center;
+  img {
+    // display: inline-block;
+    max-width: 100%;
+    @include breakpoint(mobile){
+      width: 60%;
+      margin-bottom: 5%;
+    }
+  }
+}
+.b-landing__top--img-info {
+  @include breakpoint(mobile){
+    img {
+      width: 90%;
+    }
+  }
+}
+.b-landing__bottom {
+  max-width: 1090px;
+  padding: 0 25px;
+  overflow: hidden;
+  margin: 0 auto;
+  p, li {
+    font-size: 15px;
+    line-height: 23px;
+    font-weight: 100;
+    @include breakpoint(mobile){
+      font-size: 17px;
+    }
+  }
+  li {
+    line-height: 18px;
+  }
+  @include breakpoint(mobile){
+    width: 100%;
+    padding:0 5%;
+  }
+}
+.b-landing__bottom--left {
+  width: 53%;
+  float: left;
+  padding-left: 12.4%;
+  padding-right: 8%;
+  img {
+    margin-bottom: 7%;
+    max-width: 100%;
+  }
+  @include breakpoint(tablet){
+    // padding-left:0;
+  }
+  @include breakpoint(mobile){
+    width: 100%;
+    padding-left:0;
+    padding-right:0;
+    margin-bottom: 10%;
+    img {
+      width: 100%;
+    }
+  }
+}
+.b-landing__bottom--right {
+  width: 47%;
+  float: left;
+  h3 {
+    margin-bottom: 3%;
+  }
+  ul {
+    margin-bottom: 4%;
+    padding-left:3.5%;
+    li {
+      list-style-type: disc;
+    }
+  }
+  @include breakpoint(mobile){
+    width: 100%;
+    ul {
+      padding-left:5.5%;
+      margin-bottom: 9%;
+    }
+
+  }
+}
+.b-landing__top--img-logo {
+  padding-top:4%;
+  overflow: hidden;
+  margin-bottom: 2%;
+  @include breakpoint(mobile){
+    padding-top: 7%;
+  }
+}
+.b-landing__top--img-info {
+  overflow: hidden;
+  margin-bottom: 6.2%;
+}
+.b-landing__social {
+  padding-top:10%;
+}
+.b-landing__social--left {
+  width: 50%;
+  float: left;
+  h4 {
+    font-size: 14px;
+    margin-bottom: 7%;
+  }
+  img {
+    margin-right: 9%;
+  }
+  @include breakpoint(tablet){
+    width: 100%;
+    margin-bottom: 10%;
+  }
+}
+.b-landing__social--right {
+  width: 50%;
+  float: left;
+  strong {
+    font-weight: bold;
+  }
+  ul li {
+    list-style-type: none;
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 2.7%;
+  }
+  ul {
+    padding-left:0;
+  }
+  @include breakpoint(tablet){
+    width: 100%;
+    margin-bottom: 10%;
+  }
+}
