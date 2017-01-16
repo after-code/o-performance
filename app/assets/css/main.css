@@ -111,8 +111,7 @@ body {
 
 .section--landing .wrapper {
   display: flex;
-  align-items: center;
-  height: 90vh; }
+  align-items: center; }
   @media (max-width: 700px) {
     .section--landing .wrapper {
       display: block;
@@ -140,7 +139,8 @@ body {
   max-width: 1090px;
   padding: 0 25px;
   overflow: hidden;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-bottom: 5%; }
   .b-landing__bottom p, .b-landing__bottom li {
     font-size: 15px;
     line-height: 23px;
