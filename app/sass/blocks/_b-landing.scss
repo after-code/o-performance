@@ -42,6 +42,7 @@
   @include breakpoint(mobile){
     width: 100%;
     padding:0 5%;
+    padding: 0 9%;
   }
 }
 .b-landing__bottom--left {
@@ -94,11 +95,17 @@
   margin-bottom: 2%;
   @include breakpoint(mobile){
     padding-top: 7%;
+    margin-bottom: 12%;
+    margin-top: 12%;
   }
 }
 .b-landing__top--img-info {
   overflow: hidden;
   margin-bottom: 6.2%;
+  @include breakpoint(mobile){
+    width: 90%;
+    margin-left: 5%;
+  }
 }
 .b-landing__social {
   padding-top:10%;

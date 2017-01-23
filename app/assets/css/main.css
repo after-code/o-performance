@@ -111,7 +111,8 @@ body {
 
 .section--landing .wrapper {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  height: 100vh; }
   @media (max-width: 700px) {
     .section--landing .wrapper {
       display: block;
@@ -153,7 +154,8 @@ body {
   @media (max-width: 700px) {
     .b-landing__bottom {
       width: 100%;
-      padding: 0 5%; } }
+      padding: 0 5%;
+      padding: 0 9%; } }
 
 .b-landing__bottom--left {
   width: 53%;
@@ -195,11 +197,17 @@ body {
   margin-bottom: 2%; }
   @media (max-width: 700px) {
     .b-landing__top--img-logo {
-      padding-top: 7%; } }
+      padding-top: 7%;
+      margin-bottom: 12%;
+      margin-top: 12%; } }
 
 .b-landing__top--img-info {
   overflow: hidden;
   margin-bottom: 6.2%; }
+  @media (max-width: 700px) {
+    .b-landing__top--img-info {
+      width: 90%;
+      margin-left: 5%; } }
 
 .b-landing__social {
   padding-top: 10%; }
