@@ -43,7 +43,7 @@ function end() {
   // setTimeout(function(){$sixth.velocity({rotateZ: [0,-69.4]}, 1275, [100, 20], function(){});},200);
 
   setTimeout(function(){
-    $svg.velocity({scale:"0.93", opacity:0}, 700,  function(){
+    $svg.velocity({scale:"0.93", opacity:0}, 500,  function(){
       // $first.css({opacity:'0'});
       // $second.css({opacity:'0'});
       // $third.css({opacity:'0'});
@@ -59,7 +59,7 @@ function end() {
         $animation.css({"display": "none"});
       },300);
     });
-    setTimeout(function(){$landing.velocity({opacity:'1'}, 600);},600);
+    setTimeout(function(){$landing.velocity({opacity:'1'}, 600);},550);
 
   },2200);
 
