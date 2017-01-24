@@ -15,6 +15,7 @@ $(function(){
   $last = $(".elem-last");
   $svg = $(".svg-main");
   $landing = $(".b-landing");
+  $animation = $(".b-landing-animation-wrap");
   $mask = $(".b-landing-animation__mask");
   start();
 });
@@ -42,7 +43,7 @@ function end() {
   // setTimeout(function(){$sixth.velocity({rotateZ: [0,-69.4]}, 1275, [100, 20], function(){});},200);
 
   setTimeout(function(){
-    $svg.velocity({scale:"0.9", opacity:0}, 400,  function(){
+    $svg.velocity({scale:"0.93", opacity:0}, 700,  function(){
       // $first.css({opacity:'0'});
       // $second.css({opacity:'0'});
       // $third.css({opacity:'0'});
@@ -54,12 +55,12 @@ function end() {
       //   $fourth.velocity({scale:"0.001"},900, [100, 20]);
       // // },300);
       //
+       setTimeout(function(){
+        $animation.css({"display": "none"});
+      },300);
     });
-    setTimeout(function(){$landing.velocity({opacity:'1'});},400);
+    setTimeout(function(){$landing.velocity({opacity:'1'}, 600);},600);
 
-    // setTimeout(function(){
-    //   $fifth.velocity({scale:"0.001"},1100, [400, 40]);
-    // },600);
   },2200);
 
   // setTimeout(function(){$mask.velocity({opacity:"0"},300);},1900)
