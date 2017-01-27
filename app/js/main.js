@@ -17,6 +17,10 @@ $(function(){
   $landing = $(".b-landing");
   $animation = $(".b-landing-animation-wrap");
   $mask = $(".b-landing-animation__mask");
+  $left = $(".b-landing__bottom--left");
+  $right = $(".b-landing__bottom--right");
+  $logo = $(".b-landing__top--img-logo");
+  $info = $(".b-landing__top--img-info");
   start();
 });
 
@@ -43,29 +47,26 @@ function end() {
   // setTimeout(function(){$sixth.velocity({rotateZ: [0,-69.4]}, 1275, [100, 20], function(){});},200);
 
   setTimeout(function(){
-    $svg.velocity({scale:"0.93", opacity:0}, 500,  function(){
-      // $first.css({opacity:'0'});
-      // $second.css({opacity:'0'});
-      // $third.css({opacity:'0'});
-      // // $fourth.css({opacity:'0'});
-      // $last.css({opacity:'0'});
-      // $(".b-landing").css({opacity:'1'});
-      //
-      // // setTimeout(function(){
-      //   $fourth.velocity({scale:"0.001"},900, [100, 20]);
-      // // },300);
-      //
-       setTimeout(function(){
-        $animation.css({"display": "none"});
-      },300);
-    });
-    setTimeout(function(){$landing.velocity({opacity:'1'}, 600);},550);
+    $svg.css({transition:"none"});
+    // $svg.velocity({scale:"0.21",translateY:"0%"}, 1410 , 'easeInOutQuart',  function(){
+    //    setTimeout(function(){
+    //     $animation.css({"display": "none"});
+    //   },300);
+    // });
+    $fifth.velocity({scale:"4.21",translateY:"-10%", opacity:1}, 1710 , 'easeInOutQuart');
+    $svg.velocity({scale:"1", opacity:0}, 1410 , 'easeInOutQuart');
+    setTimeout(function(){$logo.velocity({opacity:'1',top:"-20%"}, 600);},1100);
+    setTimeout(function(){$info.velocity({opacity:'1',top:"-20%"}, 600);},1100);
+    setTimeout(function(){$left.velocity({top:0, opacity:'1',top:"0px"}, 600, 'easeInOutCubic');},1100);
+    setTimeout(function(){$right.velocity({top:0, opacity:'1',top:"0px"}, 600, 'easeInOutCubic');},1100);
 
-  },2200);
+  },2620);
 
   // setTimeout(function(){$mask.velocity({opacity:"0"},300);},1900)
   // setTimeout(function(){$svg.velocity({opacity:"0"},300, [100, 20], function(){});},1700);
 }
 function end2(){
-  $second.velocity({scale: "1"},  500, [100, 20], function(){});
+  setTimeout(function(){
+    $second.velocity({scale: "1"},  500, [100, 20], function(){});
+  },50);
 }

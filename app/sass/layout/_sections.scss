@@ -2,7 +2,10 @@
   .wrapper {
     display: flex;
     align-items: center;
-    // height: 100vh;
+    height: 100vh;
+    @include breakpoint(height900){
+      height: auto;
+    }
     @include breakpoint(mobile){
       display: block;
       height: auto;
